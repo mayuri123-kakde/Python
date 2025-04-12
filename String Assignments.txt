@@ -1,0 +1,60 @@
+1) accept a string and display whether it is palindrom or not.
+
+mystring = input("enter the string:")
+reversed_string = mystring[::-1]
+if mystring  == reversed_string:
+  print("it is  palindrome string")
+else:
+  print("it is not palindrome string")
+
+
+
+2) accept a string and display it. now accept slicing positions from and to , slice the string and display it.
+
+mystring = input("enter the string:")
+print(mystring)
+start = int(input("enter the start number"))
+end = int(input("enter the end  number:"))
+sliced_string = mystring[start:end]
+print("Sliced string:", sliced_string)
+
+
+3) accept a string and display how many vowel characters are there inside it.
+
+mystring = input("enter the string:")
+vowels = "aeious"
+count_vowels = 0
+for  ch in  mystring:
+  if ch.lower() in vowels:
+   count += 1
+print("Number of vowels:", count)
+
+
+4) accept a string and display the characters which are repeated in the string
+ri
+mystring = input("enter the  string:")
+count_word = 0
+for ch in mystring:
+if  (ch >= 0) in mystring:
+      count += 1
+print("number   of characters,count)
+
+
+
+
+
+5) accept a string and find out how many words are there in it.
+
+
+6) accept a sentence and reverse it.
+	e.g.  hello world
+		world hello
+
+mystring = input("enter the string:")
+reversed_string = mystring[::-1]
+
+
+7) A pangram is a sentence that contains all the alphabets.
+example: The quick brown fox jumps over the lazy dog. Your task here is to write a function to check a sentence to see if it is a pangram or not.
+
+

@@ -1,0 +1,61 @@
+create a hierarchy
+
+				Course
+
+					void start()
+					void end()
+
+override "start()" and "end()" in all the child classes.
+
+		MsCit		Basic		Dbda
+							void orientation()
+
+
+
+write a function "perform"
+
+	perform function should be defined in such a way that it can accept any course and invoke "start()" and "end()" functions.
+
+	also make sure if "Dbda" is passed , its "orientation()" method also should be called.
+
+
+
+class Course:
+    def start(self):
+        print("course is started")
+    def end(self):
+        print("course is ended")
+
+class Basic(Course):
+    def start(self):
+        print("course is started")
+    def  end (self):
+        print("course is ended")
+
+class  MsCit(Course):
+    def start(self):
+        print("course is started")
+
+    def end(self):
+        print("course is ended")
+
+class Dbda(Course):
+    def start(self):
+        print("course is started")
+
+    def end(self):
+        print("course is ended")
+
+    def orientation(self):
+        print("Orientation session for DBDA is in progress.")
+
+    def perform(course):
+        course.start()
+        course.end()
+        if isinstance(course, Dbda):
+            course.orientation()
+
+    
+    perform(MsCit())
+    perform(Basic())
+    perform(Dbda())
